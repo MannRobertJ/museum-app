@@ -1,0 +1,22 @@
+body {
+    background-color: orange;
+}
+
+main {
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+  }
+
+  h1 {
+    margin: 3rem 1rem 6rem 1rem;
+  }
+
+  .gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
