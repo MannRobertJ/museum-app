@@ -1,7 +1,8 @@
 html {
-  background-image: url(./images/treewallpaper.jpg);
+  background-image: url(./images/wallpaper.jpg);
   background-size: cover;
-  font-family: 'Francois One', sans-serif;
+  font-family: 'Indie Flower', cursive;
+  color: black;
 }
 
 main {
@@ -11,9 +12,10 @@ main {
   border-radius: 5px;
   padding: 2rem 0;
   text-align: center;
-  color: aliceblue;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+}
+
+footer {
+  text-align: center;
 }
 
 h1 {
