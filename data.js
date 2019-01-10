@@ -323,38 +323,3 @@ const data = {
       }
     ]
   }
-
-  const paintings = data.artObjects;
-
-  for (i = 0; i < paintings.length; i++) {
-    if (paintings[i].webImage.width > 500 && paintings[i].principalOrFirstMaker.indexOf('Honthorst') === -1) {
-      const currentPainting = paintings[i];
-      displayPainting(currentPainting);
-    }
-  }
-
-  function displayPainting (painting) {
-    const paintingLink = document.createElement('a');
-    paintingLink.href = "./pages/detail-page.html";
-    paintingImg = document.createElement('img');
-    paintingLink.appendChild(paintingImg);
-    paintingLink.number = i;
-    paintingImg.alt = paintings[i].title;
-    paintingImg.id = `painting${i}`
-    paintingImg.className = "artObject" 
-    paintingImg.src = paintings[i].webImage.url;
-    paintingImg.onmouseover = function () {switchToCuteAnimal(paintingLink.number)};
-    const gallery = document.getElementById('gallery');
-    gallery.appendChild(paintingLink);
-  }
-
-  function switchToCuteAnimal (number) {
-      const painting = document.getElementById(`painting${number}`);
-      painting.src = "/images/somerodent.jpg";
-  }
-
-  
-
-
-
-  

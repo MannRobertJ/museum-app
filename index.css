@@ -30,7 +30,3 @@ h1 {
   max-height: 20rem;
   margin: 1rem;
 }
-
-.artObject:hover {
-  transform: rotate(180deg) scale(1.5, 1.5);
-}
