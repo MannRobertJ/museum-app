@@ -51,16 +51,13 @@ const hasFoulLanguage = (msg) => {
     let i = 0;
     let badWords = false;
     console.log(foulLanguage.length);
-    while (i < foulLanguage.length && badWords === false) {
+    while (i < foulLanguage.length) {
         if (lowerCaseMsg.indexOf(foulanguage[i]) > -1) {
             badWords = true;
-            return true;
         }
         i++;
-        if (i === foulLanguage.length + 1) {
-            return false;
-        }
     }
+    return badWords;
 }
 
 
