@@ -62,12 +62,3 @@ const hasFoulLanguage = (msg) => {
         }
     }
 }
-
-
-
-
-
-
-
-
-
