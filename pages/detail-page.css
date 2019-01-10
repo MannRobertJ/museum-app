@@ -1,9 +1,6 @@
 html {
     background-image: url(../images/wallpaper.jpg);
     text-align: center;
-    color: aliceblue;
-    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
     font-family: 'Francois One', sans-serif;
 }
 
