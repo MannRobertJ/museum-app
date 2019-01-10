@@ -327,8 +327,10 @@ const data = {
   const paintings = data.artObjects;
 
   for (i = 0; i < paintings.length; i++) {
-    const currentPainting = paintings[i];
-    displayPainting(currentPainting);
+    if (paintings[i].webImage.width > 500 && paintings[i].principalOrFirstMaker.indexOf('Honthorst') === -1) {
+      const currentPainting = paintings[i];
+      displayPainting(currentPainting);
+    }
   }
 
   function displayPainting (painting) {
