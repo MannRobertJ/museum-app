@@ -48,14 +48,12 @@ const doesNotPassAllValidations = (name, msg) => {
 const hasFoulLanguage = (msg) => {
     const foulLanguage = ['fuck', 'shit'];
     const lowerCaseMsg = msg.toLowerCase();
-    let i = 0;
     let badWords = false;
     console.log(foulLanguage.length);
-    while (i < foulLanguage.length) {
-        if (lowerCaseMsg.indexOf(foulanguage[i]) > -1) {
+    for (let i = 0; i < foulLanguage.length; i++) {
+        if (lowerCaseMsg.indexOf(foulLanguage[i]) > -1) {
             badWords = true;
         }
-        i++;
     }
     return badWords;
 }
